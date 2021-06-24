@@ -5,12 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vijay</title>
+    <title>challenge1</title>
+   
+    <link rel="icon" href="favicon.ico">
+    <style>
+        .tr{
+            line-height: 1;
+        }
+        .y2{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            float: left;
+        }
+        .para{
+            float: left;
+        }
+        
+        body{
+            background-color: aliceblue;
+        }
+        hr{
+            
+            width: 10%;
+            border-style: dotted none none none;
+            border-color:gray;
+            border-width: 5px ;
+        }
+        .t1{
+           font-family: 'NTR', sans-serif; ;
+        }
+    </style>
 </head>
 
 <body>
     <h2>This page is not fully made</h2>
-    <table cellspacing="10px">
+    <hr>
+    <table cellspacing="10px" class="tr">
         <tr>
             <td>
                 <img src="vijay.png" alt="vijay profile picture" height="250px" width="180px"
@@ -30,17 +61,17 @@
                     </tr>
                     <tr>
                         <td>College:</td>
-                        <td id="age">BML Munjal University</td>
+                        <td >BML Munjal University</td>
 
                     </tr>
                     <tr>
                         <td>Degree:</td>
-                        <td id="age">B-tech</td>
+                        <td >B-tech</td>
 
                     </tr>
                     <tr>
                         <td>Specialization:</td>
-                        <td id="age">Mechanical Engineering </td>
+                        <td>Mechanical Engineering </td>
 
                     </tr>
                 </table>
@@ -49,6 +80,17 @@
     </table>
 
 
+<hr>
+<script>
+    let today = new Date();
+    let y = today.getFullYear()-1997-1;
+    let m = today.getMonth()+1;
+    let d = today.getDate()+4
+    var age = `${y} years, ${m} months, ${d} days.`;
+    console.log(age);
+    document.getElementById("age").innerHTML= age;
+
+</script>
 
 </body>
 
